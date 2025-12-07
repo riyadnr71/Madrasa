@@ -5,6 +5,7 @@
 
 <!doctype html>
 <html lang="bn">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,39 +13,157 @@
   <meta name="description" content="মাদ্রাসা নাম — প্রাথমিক তথ্য, ভর্তি, পাঠক্রম ও যোগাযোগ">
   <style>
     /* Simple responsive CSS: modify as needed */
-    :root{--accent:#0b74de;--muted:#666}
-    *{box-sizing:border-box}
-    body{font-family:system-ui,-apple-system,'Segoe UI','Noto Sans Bengali',Roboto,'Helvetica Neue',Arial;line-height:1.6;margin:0;color:#222}
-    header{background:#fff;border-bottom:1px solid #e6e6e6;position:sticky;top:0;z-index:40}
-    .container{max-width:1100px;margin:0 auto;padding:0 16px}
-    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .brand{display:flex;align-items:center;gap:10px}
-    .brand img{height:48px;width:48px;border-radius:6px}
-    .nav-links{display:flex;gap:14px}
-    .nav-links a{color:#111;text-decoration:none;padding:8px 10px;border-radius:6px}
-    .nav-links a:hover{background:#f3f6fb}
-    .hero{display:grid;grid-template-columns:1fr;gap:20px;padding:36px 0}
-    .hero h1{font-size:28px;margin:0}
-    .hero p{color:var(--muted);margin:8px 0 0}
-    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none}
-    .btn-primary{background:var(--accent);color:#fff}
-    .grid{display:grid;gap:18px}
-    .cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
-    .card{background:#fff;border:1px solid #eee;padding:16px;border-radius:10px}
-    footer{padding:28px 0;border-top:1px solid #eee;margin-top:28px;color:var(--muted)}
+    :root {
+      --accent: #0b74de;
+      --muted: #666
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans Bengali', Roboto, 'Helvetica Neue', Arial;
+      line-height: 1.6;
+      margin: 0;
+      color: #222
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e6e6e6;
+      position: sticky;
+      top: 0;
+      z-index: 40
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .brand img {
+      height: 48px;
+      width: 48px;
+      border-radius: 6px
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 14px
+    }
+
+    .nav-links a {
+      color: #111;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 6px
+    }
+
+    .nav-links a:hover {
+      background: #f3f6fb
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 36px 0
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      margin: 0
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin: 8px 0 0
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px
+    }
+
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 16px;
+      border-radius: 10px
+    }
+
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid #eee;
+      margin-top: 28px;
+      color: var(--muted)
+    }
 
     /* layout breakpoints */
-    @media(min-width:760px){
-      .hero{grid-template-columns:1fr 420px;align-items:center}
-      .hero h1{font-size:36px}
-      .nav-links{gap:18px}
+    @media(min-width:760px) {
+      .hero {
+        grid-template-columns: 1fr 420px;
+        align-items: center
+      }
+
+      .hero h1 {
+        font-size: 36px
+      }
+
+      .nav-links {
+        gap: 18px
+      }
     }
 
     /* small form style */
-    form input, form textarea, form select{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;margin-top:8px}
-    .small-muted{font-size:13px;color:var(--muted)}
+    form input,
+    form textarea,
+    form select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 8px
+    }
+
+    .small-muted {
+      font-size: 13px;
+      color: var(--muted)
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -71,7 +190,7 @@
   <main class="container">
     <section id="home" class="hero">
       <div>
-        <h1>আল-হিদায়া মাদরাসায় তোমাকে স্বাগতম</h1>
+        <h1>রিয়াদ মাদরাসায় তোমাকে স্বাগতম</h1>
         <p>আমরা কোরআন শিক্ষার পাশাপাশি আরবী, এইলমুল হাদিস, ও সাধারণ শিক্ষাও প্রদান করে থাকি — ছোট-বড় সবার জন্য।</p>
         <p style="margin-top:14px">
           <a class="btn btn-primary" href="#admission">এখনই ভর্তি হন</a>
@@ -91,7 +210,8 @@
 
     <section id="about" style="margin-top:26px">
       <h2>আমাদের সম্পর্কে</h2>
-      <p class="small-muted">সংক্ষিপ্ত পরিচিতি: মাদ্রাসার ইতিহাস, শিক্ষক-শিক্ষার্থীর অনুপ্রেরণা, লক্ষ্য ও উদ্দেশ্য লিখুন।</p>
+      <p class="small-muted">সংক্ষিপ্ত পরিচিতি: মাদ্রাসার ইতিহাস, শিক্ষক-শিক্ষার্থীর অনুপ্রেরণা, লক্ষ্য ও উদ্দেশ্য
+        লিখুন।</p>
       <div class="grid cards" style="margin-top:12px">
         <div class="card">
           <h4>মিশন</h4>
@@ -151,7 +271,8 @@
             <label>মন্তব্য</label>
             <textarea name="message" rows="4" placeholder="যোগাযোগের জন্য লিখুন"></textarea>
             <button type="submit" class="btn btn-primary" style="margin-top:8px">জমা দিন</button>
-            <div class="small-muted" style="margin-top:8px">এই ফর্মটি আপনার সার্ভারে POST করে সংরক্ষণ করুন (বা Google Forms ব্যবহার করতে পারেন)</div>
+            <div class="small-muted" style="margin-top:8px">এই ফর্মটি আপনার সার্ভারে POST করে সংরক্ষণ করুন (বা Google
+              Forms ব্যবহার করতে পারেন)</div>
           </form>
         </div>
       </div>
@@ -208,14 +329,15 @@
 
   <script>
     // সহজ ক্লায়েন্ট-সাইড ফর্ম হ্যান্ডলার: এখানে AJAX/Fetch যোগ করে সার্ভারে পাঠাতে হবে
-    document.getElementById('admissionForm')?.addEventListener('submit', function(e){
+    document.getElementById('admissionForm')?.addEventListener('submit', function (e) {
       e.preventDefault();
       alert('তথ্য জমা হয়েছে (ডেমো)। সার্ভারে POST যুক্ত করুন)।');
     });
-    document.getElementById('contactForm')?.addEventListener('submit', function(e){
+    document.getElementById('contactForm')?.addEventListener('submit', function (e) {
       e.preventDefault();
       alert('মেসেজ পাঠানো হয়েছে (ডেমো)।');
     });
   </script>
 </body>
+
 </html>
