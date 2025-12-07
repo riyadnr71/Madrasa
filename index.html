@@ -1,0 +1,221 @@
+<!-- Madrasa Website Template
+     Single-file responsive HTML + CSS template
+     Replace placeholder text and images with real content (Bengali content included)
+-->
+
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>মাদ্রাসা নাম — অফিসিয়াল সাইট</title>
+  <meta name="description" content="মাদ্রাসা নাম — প্রাথমিক তথ্য, ভর্তি, পাঠক্রম ও যোগাযোগ">
+  <style>
+    /* Simple responsive CSS: modify as needed */
+    :root{--accent:#0b74de;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,'Segoe UI','Noto Sans Bengali',Roboto,'Helvetica Neue',Arial;line-height:1.6;margin:0;color:#222}
+    header{background:#fff;border-bottom:1px solid #e6e6e6;position:sticky;top:0;z-index:40}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{height:48px;width:48px;border-radius:6px}
+    .nav-links{display:flex;gap:14px}
+    .nav-links a{color:#111;text-decoration:none;padding:8px 10px;border-radius:6px}
+    .nav-links a:hover{background:#f3f6fb}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;padding:36px 0}
+    .hero h1{font-size:28px;margin:0}
+    .hero p{color:var(--muted);margin:8px 0 0}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none}
+    .btn-primary{background:var(--accent);color:#fff}
+    .grid{display:grid;gap:18px}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+    .card{background:#fff;border:1px solid #eee;padding:16px;border-radius:10px}
+    footer{padding:28px 0;border-top:1px solid #eee;margin-top:28px;color:var(--muted)}
+
+    /* layout breakpoints */
+    @media(min-width:760px){
+      .hero{grid-template-columns:1fr 420px;align-items:center}
+      .hero h1{font-size:36px}
+      .nav-links{gap:18px}
+    }
+
+    /* small form style */
+    form input, form textarea, form select{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;margin-top:8px}
+    .small-muted{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="https://picsum.photos/seed/madrasa/80" alt="logo">
+          <div>
+            <strong>আল-হিদায়া মাদরাসা</strong>
+            <div class="small-muted">শিক্ষা • নৈতিকতা • সমাজ</div>
+          </div>
+        </div>
+        <div class="nav-links" aria-label="প্রধান ন্যাভিগেশন">
+          <a href="#home">হোম</a>
+          <a href="#about">আমাদের সম্পর্কে</a>
+          <a href="#programs">পাঠক্রম</a>
+          <a href="#admission">ভর্তি</a>
+          <a href="#events">ইভেন্ট</a>
+          <a href="#contact">যোগাযোগ</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div>
+        <h1>আল-হিদায়া মাদরাসায় তোমাকে স্বাগতম</h1>
+        <p>আমরা কোরআন শিক্ষার পাশাপাশি আরবী, এইলমুল হাদিস, ও সাধারণ শিক্ষাও প্রদান করে থাকি — ছোট-বড় সবার জন্য।</p>
+        <p style="margin-top:14px">
+          <a class="btn btn-primary" href="#admission">এখনই ভর্তি হন</a>
+          <a class="btn" style="margin-left:8px;">আরও জানুন</a>
+        </p>
+      </div>
+      <div class="card">
+        <h3>গুরুত্বপূর্ণ তথ্য</h3>
+        <ul class="small-muted">
+          <li>ঠিকানা: গ্রামের নাম, জেলা</li>
+          <li>ফোন: ০১৭XXXXXXXX</li>
+          <li>ক্লাস সময়: ৯:০০ AM — ৩:০০ PM</li>
+          <li>ভর্তি খোলা: জানুয়ারি — মার্চ</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:26px">
+      <h2>আমাদের সম্পর্কে</h2>
+      <p class="small-muted">সংক্ষিপ্ত পরিচিতি: মাদ্রাসার ইতিহাস, শিক্ষক-শিক্ষার্থীর অনুপ্রেরণা, লক্ষ্য ও উদ্দেশ্য লিখুন।</p>
+      <div class="grid cards" style="margin-top:12px">
+        <div class="card">
+          <h4>মিশন</h4>
+          <p class="small-muted">শিক্ষার মান উন্নয়ন ও নৈতিক মূল্যবোধ গঠন।</p>
+        </div>
+        <div class="card">
+          <h4>ভিশন</h4>
+          <p class="small-muted">সার্বিক উৎকর্ষ এবং দায়িত্বশীল নাগরিক প্রস্তুত করা।</p>
+        </div>
+        <div class="card">
+          <h4>শিক্ষকবৃন্দ</h4>
+          <p class="small-muted">প্রফেশনাল ও অভিজ্ঞ শিক্ষকরা পাঠদান করেন।</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" style="margin-top:26px">
+      <h2>পাঠক্রম</h2>
+      <p class="small-muted">আমাদের প্রধান প্রধান কোর্সগুলো:</p>
+      <div class="grid cards" style="margin-top:12px">
+        <div class="card">
+          <h4>কোরআন শিক্ষা</h4>
+          <p class="small-muted">তাজভীদ, হিফজ, ও পাঠ্যশৈলী</p>
+        </div>
+        <div class="card">
+          <h4>আরবি ভাষা</h4>
+          <p class="small-muted">বক্তৃতা ও গ্রামার</p>
+        </div>
+        <div class="card">
+          <h4>ধর্মীয় শিক্ষা</h4>
+          <p class="small-muted">আকাইদ, ফিকহ, হাদিস</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="admission" style="margin-top:26px">
+      <h2>ভর্তি তথ্য</h2>
+      <p class="small-muted">ভর্তি পদ্ধতি, প্রয়োজনীয় কাগজপত্র ও ফি সম্পর্কে সংক্ষেপে লিখুন।</p>
+      <div class="grid" style="grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
+        <div class="card">
+          <h4>কেন আমাদের বেছে নেবেন?</h4>
+          <ul class="small-muted">
+            <li>কম খরচে মানসম্মত শিক্ষা</li>
+            <li>আধুনিক ও ঐতিহ্যবাহী মিলিত পাঠ্যক্রম</li>
+            <li>সুষ্ঠু পরিবেশ ও নিরাপত্তা</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>অনলাইন আবেদন</h4>
+          <form id="admissionForm">
+            <label>নাম</label>
+            <input type="text" name="name" placeholder="সম্পূর্ণ নাম">
+            <label>বয়স / শ্রেণি</label>
+            <input type="text" name="age" placeholder="বয়স বা শ্রেণি">
+            <label>ফোন</label>
+            <input type="text" name="phone" placeholder="০১৭...">
+            <label>মন্তব্য</label>
+            <textarea name="message" rows="4" placeholder="যোগাযোগের জন্য লিখুন"></textarea>
+            <button type="submit" class="btn btn-primary" style="margin-top:8px">জমা দিন</button>
+            <div class="small-muted" style="margin-top:8px">এই ফর্মটি আপনার সার্ভারে POST করে সংরক্ষণ করুন (বা Google Forms ব্যবহার করতে পারেন)</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" style="margin-top:26px">
+      <h2>ইভেন্ট ও সংবাদ</h2>
+      <p class="small-muted">নজরে থাকার মত সাম্প্রতিক কার্যক্রম এবং সংবাদ।</p>
+      <div class="grid cards" style="margin-top:12px">
+        <div class="card">
+          <h4>বর্ষিক পুরস্কার বিতরণী</h4>
+          <p class="small-muted">তারিখ: ১৫ মার্চ ২০২৬ — ছাত্রদের মধ্যে পুরস্কার বিতরণ।</p>
+        </div>
+        <div class="card">
+          <h4>শিক্ষক প্রশিক্ষণ</h4>
+          <p class="small-muted">নিয়মিত ওয়ার্কশপ এবং উন্নয়ন কার্যক্রম।</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:26px;margin-bottom:18px">
+      <h2>যোগাযোগ</h2>
+      <div class="grid" style="grid-template-columns:1fr 320px;gap:18px;margin-top:12px">
+        <div>
+          <p class="small-muted">ঠিকানা ও যোগাযোগের বিস্তারিত লিখুন:</p>
+          <p><strong>ঠিকানা:</strong> গ্রামের নাম, উপজেলা, জেলা</p>
+          <p><strong>ফোন:</strong> ০১৭XXXXXXXX</p>
+          <p><strong>ইমেইল:</strong> info@madrasaname.org</p>
+        </div>
+        <div class="card">
+          <h4>যোগাযোগ পাঠান</h4>
+          <form id="contactForm">
+            <label>নাম</label>
+            <input type="text" name="name">
+            <label>ইমেইল</label>
+            <input type="email" name="email">
+            <label>মেসেজ</label>
+            <textarea name="message" rows="4"></textarea>
+            <button class="btn btn-primary" style="margin-top:8px">পাঠান</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <div>© ২০২৫ আল-হিদায়া মাদ্রাসা — সকল অধিকার সংরক্ষিত</div>
+          <div class="small-muted">ডিজাইনিং: তোমার নাম • হোস্টিং: GitHub Pages বা Netlify</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // সহজ ক্লায়েন্ট-সাইড ফর্ম হ্যান্ডলার: এখানে AJAX/Fetch যোগ করে সার্ভারে পাঠাতে হবে
+    document.getElementById('admissionForm')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('তথ্য জমা হয়েছে (ডেমো)। সার্ভারে POST যুক্ত করুন)।');
+    });
+    document.getElementById('contactForm')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('মেসেজ পাঠানো হয়েছে (ডেমো)।');
+    });
+  </script>
+</body>
+</html>
